@@ -318,13 +318,10 @@ class AgenteClima:
             self.estado_ventanas = "cerradas"
         elif self.modelo.lluvia_anterior:
             accion = "Espera (reciente lluvia, se está secando)"
-        elif temp < 15:
+        elif temp < 20:
             accion = "Cierra ventanas (frío detectado)"
             self.estado_ventanas = "cerradas"
-        elif temp > 30:
-            accion = "Abre ventanas (mucho calor detectado)"
-            self.estado_ventanas = "abiertas"
-        elif temp > 25:
+        elif temp >= 20:
             accion = "Abre ventanas (calor detectado)"
             self.estado_ventanas = "abiertas"
         else:
