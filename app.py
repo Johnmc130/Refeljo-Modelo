@@ -417,13 +417,13 @@ if analizar:
         # Centrar la imagen
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
-            st.image("ventana_abierta.png", use_container_width=True)
+            st.image("Ventana_Abierta.png", use_container_width=True)
         st.markdown('<div class="ventanas ventanas-abiertas">✅ Ventanas Abiertas</div>', unsafe_allow_html=True)
     else:
         # Centrar la imagen
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
-            st.image("ventana_cerrada.png", use_container_width=True)
+            st.image("Ventana_Cerrada.png", use_container_width=True)
         st.markdown('<div class="ventanas ventanas-cerradas">🔒 Ventanas Cerradas</div>', unsafe_allow_html=True)
 
     with st.expander("🧠 Ver memoria interna del agente"):
